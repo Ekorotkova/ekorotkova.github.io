@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<link rel="stylesheet" href="./css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">		
+
+<title>Add new listing — Shareasy</title>
+	</head>
+
+	<body class="body">
+
+		<header class="header">
+    <div class="header__row">
+        <div class="header__col header__col_logo">
+            <div class="header__logo">
+                <a class="logo logo_black" href="/"></a>
+            </div>
+        </div>
+        <div class="header__col header__col_menu">
+            <div class="header__menu">
+                <div class="header-menu">
+    <div class="header-menu__list">
+        <div class="header-menu__item">
+            <a class="header-menu__link" href="#">Sell</a>
+        </div>
+        <div class="header-menu__item">
+            <a class="header-menu__link" href="#">Shop</a>
+        </div>
+        <div class="header-menu__item">
+            <a class="header-menu__link" href="#">Share</a>
+        </div>
+        <div class="header-menu__item">
+            <a class="header-menu__link" href="news.html">Community</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="header__col header__col_aside">
+            <div class="header__aside">
+                <div class="header-aside">
+    <div class="header-aside__row">
+
+        <div class="header-aside__col header-aside__col_search">
+            <button class="header-aside__button header-aside__button_search" type="button"></button>
+        </div>
+
+        <div class="header-aside__col header-aside__col_cart">
+            <div class="header-aside__cart">
+                <div class="header-cart">
+                    <div class="header-cart__cap">
+                        <div class="header-cart__counter">2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-aside__col header-aside__col_sign-in">
+            <button class="header-aside__button header-aside__button_sign-in" type="button" data-modal-trigger="sign-in-modal"></button>
+        </div>
+
+        <div class="header-aside__col header-aside__col_profile">
+            <div class="header-aside__profile">
+                <div class="header-profile">
+                    <a href="explore.html" class="header-profile__cap">
+                        <div class="header-profile__about">
+                            <div class="header-profile__name">Charlotte</div>
+                        </div>
+                        <div class="header-profile__avatar">
+                            <div class="avatar avatar_online">
+                                <img src="/i/avatar.jpg" />
+                            </div>
+                        </div>
+                    </a>
+                    <div class="header-profile__dropdown">
+                        <div class="header-profile__menu">
+                            <div class="header-profile__item">
+                                <a href="#" class="header-profile__link">Sell</a>
+                            </div>
+                            <div class="header-profile__item">
+                                <a href="#" class="header-profile__link">Purchase history</a>
+                            </div>
+                            <div class="header-profile__item">
+                                <a href="#" class="header-profile__link">Watchlist</a>
+                            </div>
+                            <div class="header-profile__item">
+                                <a href="#" class="header-profile__link">Manage subscribes</a>
+                            </div>
+                            <div class="header-profile__item">
+                                <a href="#" class="header-profile__link js-sign-out">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-aside__col header-aside__col_hamburger">
+            <button class="header-aside__button header-aside__button_hamburger header__hamburger" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="header__col header__col_hamburger">
+            <div class="header__hamburger" data-modal-trigger="mobile-menu"></div>
+        </div>
+    </div>
+</header>
+
+		<section class="page page_dashboard dashboard">
+
+				<div class="dashboard__inner">
+
+					<div class="dashboard__header">
+    <div class="dashboard__top-menu">
+        <div class="dashboard-top-menu">
+            <div class="dashboard-top-menu__list">
+                <div class="dashboard-top-menu__item dashboard-top-menu__item_explore ">
+                    <a class="dashboard-top-menu__link dashboard-top-menu__link_explore " href="explore.html">
+                        <div class="dashboard-top-menu__subtitle">Explore</div>
+                    </a>
+                </div>
+                <div class="dashboard-top-menu__item dashboard-top-menu__item_me ">
+                    <a class="dashboard-top-menu__link dashboard-top-menu__link_me " href="about.html">
+                        <div class="dashboard-top-menu__subtitle">About me</div>
+                    </a>
+                </div>
+                <div class="hide_on-desktop dashboard-top-menu__item dashboard-top-menu__item_add dashboard-top-menu__item_active">
+                    <a class="dashboard-top-menu__link dashboard-top-menu__link_add dashboard-top-menu__link_active" href="add.html">
+                        <div class="dashboard-top-menu__subtitle">Add</div>
+                    </a>
+                </div>
+                <div class="dashboard-top-menu__item dashboard-top-menu__item_wardrobe ">
+                    <a class="dashboard-top-menu__link dashboard-top-menu__link_wardrobe " href="wardrobe.html">
+                        <div class="dashboard-top-menu__subtitle hide_on-mobile">My wardrobe</div>
+                        <div class="dashboard-top-menu__subtitle hide_on-desktop">Wardrobe</div>
+                    </a>
+                </div>
+                <div class="dashboard-top-menu__item dashboard-top-menu__item_news ">
+                    <a class="dashboard-top-menu__link dashboard-top-menu__link_news " href="news.html">
+                        <div class="dashboard-top-menu__subtitle hide_on-mobile">What’s hapenning?</div>
+                        <div class="dashboard-top-menu__subtitle hide_on-desktop">Community</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+					<div class="dashboard__body">
+					</div>
+
+				</div>
+
+		</section>
+
+		<footer class="footer">
+
+    <div class="footer__row">
+        <div class="footer__col footer__col_menu">
+            <div class="footer__menu">
+                <div class="footer-menu">
+    <div class="footer-menu__list">
+        <div class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+                <div class="footer-menu__title">Store</div>
+            </a>
+        </div>
+        <div class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+                <div class="footer-menu__title">About</div>
+            </a>
+        </div>
+        <div class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+                <div class="footer-menu__title">Press</div>
+            </a>
+        </div>
+        <div class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+                <div class="footer-menu__title">Blog</div>
+            </a>
+        </div>
+        <div class="footer-menu__item">
+            <a href="#" class="footer-menu__link">
+                <div class="footer-menu__title">Support</div>
+            </a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="footer__col footer__col_social">
+            <div class="footer__social">
+                <div class="footer-social">
+    <div class="footer-social__list">
+        <div class="footer-social__item">
+            <a href="#" class="footer-social__link">
+                <div class="footer-social__icon footer-social__icon_facebook"></div>
+            </a>
+        </div>
+        <div class="footer-social__item">
+            <a href="#" class="footer-social__link">
+                <div class="footer-social__icon footer-social__icon_instagram"></div>
+            </a>
+        </div>
+        <div class="footer-social__item">
+            <a href="#" class="footer-social__link">
+                <div class="footer-social__icon footer-social__icon_twitter"></div>
+            </a>
+        </div>
+        <div class="footer-social__item">
+            <a href="#" class="footer-social__link">
+                <div class="footer-social__icon footer-social__icon_pinterest"></div>
+            </a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__copyright">
+        © Shareasy All rights Reserved
+    </div>
+
+</footer>
+
+<!-- Попап мобильного меню -->
+<div class="popup popup_mobile-menu" data-modal="mobile-menu">
+    <div class="popup__underlay js-modal-close"></div>
+    <div class="popup__modal popup__modal_mobile-menu">
+        <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__header">
+            <div class="mobile-menu__row">
+                <div class="mobile-menu__col mobile-menu__col_logo">
+                    <div class="mobile-menu__logo">
+                        <div class="logo logo_white">/ simple security</div>
+                    </div>
+                </div>
+                <div class="mobile-menu__col mobile-menu__col_close">
+                    <div class="mobile-menu__close js-modal-close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu__menu">
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/#about">О нас</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/#services">Услуги</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/#feedback">Заказать</a>
+            </div>
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/#contacts">Контакты</a>
+            </div>
+        </div>
+        <div class="mobile-menu__footer">
+            Адрес: Московская обл., г. Красногорск, ул. Молодежная, 3.<br/>
+            Реквизиты:<br/>
+            ИП Ерохин Игорь Николаевич<br/>
+            ИНН: 745208145834<br/>
+            ОГРН: 318745600015473
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- Попап авторизации -->
+<div class="popup popup_sign-in-modal" data-modal="sign-in-modal">
+    <div class="popup__underlay js-modal-close"></div>
+    <div class="popup__modal popup__modal_sign-in-modal">
+        <div class="signin-modal">
+
+    <div class="signin-modal__row">
+
+        <div class="signin-modal__column signin-modal__column_slideshow">
+            <div class="signin-modal__slideshow signin-slideshow">
+                <div class="signin-slideshow__container">
+                    <div class="signin-slideshow__wrapper">
+                        <div class="signin-slideshow__slide signin-slideshow__slide_01">
+                            <div class="signin-modal__logo">
+                                <div class="logo logo_white"></div>
+                            </div>
+                        </div>
+                        <div class="signin-slideshow__slide signin-slideshow__slide_02">
+                            <div class="signin-modal__logo">
+                                <div class="logo logo_white"></div>
+                            </div>
+                        </div>
+                        <div class="signin-slideshow__slide signin-slideshow__slide_03">
+                            <div class="signin-modal__logo">
+                                <div class="logo logo_black"></div>
+                            </div>
+                        </div>
+                        <div class="signin-slideshow__slide signin-slideshow__slide_04">
+                            <div class="signin-modal__logo">
+                                <div class="logo logo_white"></div>
+                            </div>
+                        </div>
+                        <div class="signin-slideshow__slide signin-slideshow__slide_05">
+                            <div class="signin-modal__logo">
+                                <div class="logo logo_black"></div>
+                            </div>
+                        </div>
+                        <div class="signin-slideshow__slide signin-slideshow__slide_06">
+                            <div class="signin-modal__logo">
+                                <div class="logo logo_white"></div>
+                            </div>
+                        </div>
+                        <div class="signin-slideshow__slide signin-slideshow__slide_07">
+                            <div class="signin-modal__logo">
+                                <div class="logo logo_white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="signin-modal__column signin-modal__column_main">
+            <div class="signin-modal__slider">
+                <div class="signin-slider">
+
+    <!-- header -->
+    <div class="signin-slider__header">
+        <button class="signin-slider__back-arrow js-sign-in-slider-backward"></button>
+        <div class="signin-slider__counter-line">
+            Step 
+            <span class="signin-slider__counter signin-slider__counter_current"></span>
+            of
+            <span class="signin-slider__counter signin-slider__counter_amount"></span>
+        </div>
+    </div>
+
+    <!-- title -->
+    <div class="signin-slider__title">Getting started</div>
+
+    <!-- slider -->
+    <div class="signin-slider__container">
+        <div class="signin-slider__wrapper">
+            <!-- name -->
+            <div class="signin-slider__slide">
+                <div class="signin-step">
+    <div class="signin-step__row">
+        <div class="signin-step__title">What’s yout name?</div>
+        <div class="signin-step__text">So we can personalise your shareasy</div>
+    </div>
+    <div class="signin-step__row">
+        <div class="signin-step__title">First Name</div>
+        <div class="signin-step__field">
+            <div class="input input_line js-user-name-input">
+    <input class="input__input" type="text" value="" placeholder=""/>
+</div>
+        </div>
+    </div>
+</div>
+            </div>
+            <!-- city -->
+            <div class="signin-slider__slide">
+                <div class="signin-step">
+    <div class="signin-step__row">
+        <div class="signin-step__title">Hi <span class="js-user-name-span">user</span>!<br/>What city are you?</div>
+        <div class="signin-step__text">We will take care of locating the best options near you</div>
+    </div>
+    <div class="signin-step__row">
+        <div class="signin-step__fieldset">
+            <div class="signin-step__field">
+                <div class="signin-step__title">Post code</div>
+                <label class="select select_line">
+    <select class="select__select">
+    
+        
+            <option>E1 7JH</option>
+        
+            <option>E1 7JJ</option>
+        
+            <option>E1 7LP</option>
+        
+            <option>E1 7LS</option>
+        
+            <option>E1 7LW</option>
+        
+            <option>E1 7LX</option>
+        
+            <option>E1 7LY</option>
+        
+            <option>E1 7PZ</option>
+        
+            <option>E1 7QB</option>
+        
+            <option>E1 7QG</option>
+        
+            <option>E1 7TJ</option>
+        
+            <option>E1 7TL</option>
+        
+            <option>E1 8AB</option>
+        
+            <option>E1 8AE</option>
+        
+            <option>E1 8AH</option>
+        
+            <option>E1 8AL</option>
+        
+            <option>E1 8AQ</option>
+        
+            <option>E1 8AR</option>
+        
+            <option>E1 8AT</option>
+        
+            <option>E1 8AW</option>
+        
+            <option>E1 8BJ</option>
+        
+            <option>E1 8BN</option>
+        
+            <option>E1 8BQ</option>
+        
+            <option>E1 8BT</option>
+        
+            <option>E1 8BX</option>
+        
+            <option>E1 8BZ</option>
+        
+            <option>E1 8DF</option>
+        
+            <option>E1 8DP</option>
+        
+            <option>E1 8DU</option>
+        
+            <option>E1 8HZ</option>
+        
+            <option>E1 8LN</option>
+        
+            <option>E1 8LP</option>
+        
+            <option>E1 8LW</option>
+        
+            <option>E1 8PH</option>
+        
+            <option>E1 8PP</option>
+        
+            <option>E1 8RB</option>
+        
+            <option>E1 8RU</option>
+        
+    
+    </select>
+</label>
+            </div>
+            <div class="signin-step__field">
+                <div class="signin-step__title">City</div>
+                <label class="select select_line">
+    <select class="select__select">
+    
+        
+            <option>London</option>
+        
+            <option>Birmingham</option>
+        
+            <option>Manchester</option>
+        
+            <option>West Yorkshire</option>
+        
+            <option>Liverpool</option>
+        
+            <option>Sheffield</option>
+        
+            <option>Newcastle</option>
+        
+            <option>Birmingham</option>
+        
+            <option>Leeds</option>
+        
+            <option>Sheffield</option>
+        
+            <option>Bradford</option>
+        
+            <option>Bristol</option>
+        
+            <option>Newcastle</option>
+        
+            <option>Sunderland</option>
+        
+            <option>Wolverhampton</option>
+        
+    
+    </select>
+</label>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <!-- email -->
+            <div class="signin-slider__slide">
+                <div class="signin-step">
+    <div class="signin-step__row">
+        <div class="signin-step__title">And your email?</div>
+        <div class="signin-step__text">We’ll use this to send you receipts for items you’ve bought or sold</div>
+    </div>
+    <div class="signin-step__row">
+        <div class="signin-step__title">Email</div>
+        <div class="signin-step__field">
+            <div class="input input_line">
+    <input class="input__input" type="email" value="" placeholder="youremail@email.com"/>
+</div>
+        </div>
+    </div>
+</div>
+            </div>
+            <!-- phone -->
+            <div class="signin-slider__slide">
+                <div class="signin-step">
+    <div class="signin-step__row">
+        <div class="signin-step__title">Hi <span class="js-user-name-span">user</span>!<br/>What’s your phone number?</div>
+        <div class="signin-step__text">We’re going to send you a verification code to confirm your identity</div>
+    </div>
+    <div class="signin-step__row">
+        <div class="signin-step__fieldset">
+            <div class="signin-step__field">
+                <label class="select select_line">
+    <select class="select__select">
+    
+        
+            <option>+44</option>
+        
+            <option>+1</option>
+        
+            <option>+7</option>
+        
+            <option>+37</option>
+        
+    
+    </select>
+</label>
+            </div>
+            <div class="signin-step__field">
+                <div class="input input_line">
+    <input class="input__input" type="number" value="" placeholder="your phone"/>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <!-- sms -->
+            <div class="signin-slider__slide">
+                <div class="signin-step">
+    <div class="signin-step__row">
+        <div class="signin-step__title">Enter the code here.</div>
+        <div class="signin-step__text">We’ve sent a 6-digit code to your number</div>
+    </div>
+    <div class="signin-step__row">
+        <div class="signin-step__title"></div>
+        <div class="signin-step__field">
+            <div class="sms-confirm">
+                <div class="sms-confirm__row">
+                    <div class="sms-confirm__field">
+                        <input type="text" class="sms-confirm__input" maxlength="6" placeholder="000000"/>
+                    </div>
+                    <div class="sms-confirm__lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="sms-confirm__footer">
+                    <span class="sms-confirm__label">Didn’t receive SMS?</span>
+                    <a class="sms-confirm__resend" href="#">Resend code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <!-- username -->
+            <div class="signin-slider__slide">
+                <div class="signin-step">
+    <div class="signin-step__row">
+        <div class="signin-step__title">Choose your username</div>
+        <div class="signin-step__text">This will also be the name of your shareasy shop.</div>
+    </div>
+    <div class="signin-step__row">
+        <div class="signin-step__title">Username</div>
+        <div class="signin-step__field">
+            <div class="input input_line">
+    <input class="input__input" type="text" value="" placeholder=""/>
+</div>
+        </div>
+    </div>
+</div>
+            </div>
+            <!-- password -->
+            <div class="signin-slider__slide">
+                <div class="signin-step">
+    <div class="signin-step__row">
+        <div class="signin-step__title">Choose your password</div>
+        <div class="signin-step__text">Passwords must include a symbol or number and have at least 8 characters.</div>
+    </div>
+    <div class="signin-step__row">
+        <div class="signin-step__title">Password</div>
+        <div class="signin-step__field">
+            <div class="input input_line">
+    <input class="input__input" type="password" value="" placeholder=""/>
+</div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="signin-slider__footer">
+        <button class="signin-slider__button signin-slider__button_forward js-sign-in-slider-forward button button_wide button_medium button_solid button_default button_shadow">Continue</button>
+    </div>
+
+</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+    </div>
+</div>
+
+<!-- Попап успешной авторизации -->
+<div class="popup popup_sign-in-success" data-modal="sign-in-success">
+    <div class="popup__underlay js-modal-close"></div>
+    <div class="popup__modal popup__modal_sign-in-success">
+        <div class="signin-success">
+
+    <div class="signin-success__row">
+
+        <div class="signin-success__column signin-success__column_main">
+            <div class="signin-success__content">
+                <div class="signin-success__icon"></div>
+                <div class="signin-success__title">Stay in<br/>the loop</div>
+                <div class="signin-success__text">We want to keep you updated about the latest Shareasy news, trends, offers and features by email</div>
+                <div class="signin-success__footer">
+                    <a href="explore.html" class="signin-success__button button button_full button_medium button_solid button_default button_shadow">Ok, cool</a>
+                    <a href="explore.html" class="signin-success__button button button_full button_medium button_linear button_black">No thanks</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="signin-success__column signin-success__column_image"></div>
+
+    </div>
+
+</div>
+    </div>
+</div>
+
+<!-- Попап товара -->
+<div class="popup popup_item-modal" data-modal="item-modal">
+    <div class="popup__underlay js-modal-close"></div>
+    <div class="popup__modal popup__modal_item-modal">
+        <div class="item-modal">
+
+    <div class="item-modal__close js-modal-close"></div>
+
+    <div class="item-modal__inner">
+        <div class="item-modal__row">
+
+            <div class="item-modal__column item-modal__column_gallery">
+                <div class="item-gallery">
+                    <div class="item-gallery__list">
+                        <div class="item-gallery__image">
+                            <img src="/i/item/01.jpeg"/>
+                        </div>
+                        <div class="item-gallery__image">
+                            <img src="/i/item/02.jpeg"/>
+                        </div>
+                        <div class="item-gallery__image">
+                            <img src="/i/item/03.jpeg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-modal__column item-modal__column_main">
+                <div class="item-modal__content">
+                    <div class="item-modal__title">Cyan dress with ice cream, like new</div>
+                    <div class="item-modal__description-row">
+                        <div class="item-modal__description-column item-modal__description-column_price">
+                            <div class="item-modal__price">£19</div>
+                        </div>
+                        <div class="item-modal__description-column item-modal__description-column_size">
+                            <div class="item-modal__size">M / 30</div>
+                        </div>
+                        <div class="item-modal__description-column item-modal__description-column_condition">
+                            <div class="item-modal__condition">Excelent condition</div>
+                        </div>
+                    </div>
+                    <div class="item-modal__description">
+                        Molo has made their own ice cream menu poster with classics and new favourites. Choose your favourite on this light blue Carli dress. The dress is sleeveless and has a striped ribbon at the waist. It has a zip closure at the neck.
+                    </div>
+                    <div class="item-modal__footer">
+                        <div class="item-modal__buttons-row">
+                            <button class="item-modal__button item-modal__button_buy button button_medium button_solid button_wide button_default button_shadow">Buy for £19</button>
+                            <button class="item-modal__button item-modal__button_offer button button_medium button_linear button_wide button_default">Make offer</button>
+                        </div>
+                    </div>
+                    <div class="item-modal__advert item-modal__advert_main advert" data-title="Advert"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item-modal__aside">
+            <div class="item-modal__aside-wrapper">
+                <div class="item-aside">
+
+                    <div class="item-aside__row">
+
+                        <div class="item-aside__column item-aside__column_main">
+                            <div class="item-aside__box">
+                                <div class="item-aside__subtitle">Details</div>
+                                <div class="item-aside__specs item-specs">
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Category</div>
+                                        <div class="item-specs__value">Dresses</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Activity</div>
+                                        <div class="item-specs__value">Outdoors, Play</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Age</div>
+                                        <div class="item-specs__value">8-10 yo</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Size</div>
+                                        <div class="item-specs__value">M / 10</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Condition</div>
+                                        <div class="item-specs__value">Excelent</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Color</div>
+                                        <div class="item-specs__value">Cyan, white</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Views</div>
+                                        <div class="item-specs__value">329</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Favs</div>
+                                        <div class="item-specs__value">12</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Updated</div>
+                                        <div class="item-specs__value">05/25 8:15 pm</div>
+                                    </div>
+                                    <div class="item-specs__row">
+                                        <div class="item-specs__title">Item location</div>
+                                        <div class="item-specs__value">Nottingham, United Kingdom</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-modal__advert item-modal__advert_secondary advert" data-title="Advert"></div>
+                        </div>
+
+                        <div class="item-aside__column item-aside__column_sidebar">
+                            <div class="item-aside__box">
+                                <div class="item-aside__subtitle">About seller</div>
+                                <div class="profile-box">
+    <div class="profile-box__card">
+        <div class="profile-box__header">
+            <div class="profile-box__avatar">
+                <div class="avatar avatar_online">
+                    <img src="/i/avatar.jpg" />
+                </div>
+            </div>
+            <div class="profile-box__content">
+                <div class="profile-box__name">Charlotte Newmann</div>
+                <div class="profile-box__nickname">@newcharlotte1990</div>
+                <div class="profile-box__rating">
+                    <div class="stars stars_ltr stars_4-with-half"></div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-box__footer">
+            <div class="profile-box__counters profile-counters">
+                <div class="profile-counters__row">
+                    <div class="profile-counters__col">
+                        <a href="#" class="profile-counters__link"></a>
+                        <div class="profile-counters__value">53</div>
+                        <div class="profile-counters__subtitle">for sale</div>
+                    </div>
+                    <div class="profile-counters__col">
+                        <a href="#" class="profile-counters__link"></a>
+                        <div class="profile-counters__value">21</div>
+                        <div class="profile-counters__subtitle">subscribes</div>
+                    </div>
+                    <div class="profile-counters__col">
+                        <a href="#" class="profile-counters__link"></a>
+                        <div class="profile-counters__value">39</div>
+                        <div class="profile-counters__subtitle">followers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+        <div class="profile-box__contacts">
+            <div class="profile-box__contact-line">
+                <button class="profile-box__button button button_full button_medium button_default button_solid" type="button">Follow</button>
+            </div>
+            <div class="profile-box__contact-line">
+                <button class="profile-box__button button button_full button_medium button_default button_linear" type="button">Contact seller</button>
+            </div>
+        </div>
+    
+</div>
+                            </div>
+                            <div class="item-aside__box">
+                                <div class="item-aside__subtitle">Other items</div>
+                                <div class="catalog">
+    
+
+    <div class="catalog__list items-list items-list_col-4">
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">T-Shirt Playstation</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/01.jpg)">
+            <img src="/i/catalog/molo/01.jpg" />
+        </div>
+        <div class="item-nano__price">£8</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Two sweaters, brand new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/02.jpg)">
+            <img src="/i/catalog/molo/02.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Minecraft slippers</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/03.jpg)">
+            <img src="/i/catalog/molo/03.jpg" />
+        </div>
+        <div class="item-nano__price">£9</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Blue sports suit with dinosaurs pattern</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/04.jpg)">
+            <img src="/i/catalog/molo/04.jpg" />
+        </div>
+        <div class="item-nano__price">£6</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Looney Tunes Long blouse, like new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/05.jpg)">
+            <img src="/i/catalog/molo/05.jpg" />
+        </div>
+        <div class="item-nano__price">£12</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Parka-jacket with faux fur</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/06.jpg)">
+            <img src="/i/catalog/molo/06.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Small mustard knitted sweater</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/07.jpg)">
+            <img src="/i/catalog/molo/07.jpg" />
+        </div>
+        <div class="item-nano__price">£11</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Hawaiian t-shirt for young lady</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/08.jpg)">
+            <img src="/i/catalog/molo/08.jpg" />
+        </div>
+        <div class="item-nano__price">£9</div>
+    </div>
+</div>
+            </div>
+        
+    </div>
+
+    
+</div>
+                            </div>
+                            <div class="item-modal__advert item-modal__advert_secondary advert" data-title="Advert"></div>
+                        </div>
+                    </div>
+
+                    <div class="item-aside__similar">
+                        <div class="item-aside__box">
+                            <div class="item-aside__subtitle">Similar items</div>
+                            <div class="item-modal__similar">
+                                <div class="catalog">
+    
+
+    <div class="catalog__list items-list items-list_col-9">
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">T-Shirt Playstation</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/01.jpg)">
+            <img src="/i/catalog/molo/01.jpg" />
+        </div>
+        <div class="item-nano__price">£8</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Two sweaters, brand new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/02.jpg)">
+            <img src="/i/catalog/molo/02.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Minecraft slippers</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/03.jpg)">
+            <img src="/i/catalog/molo/03.jpg" />
+        </div>
+        <div class="item-nano__price">£9</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Blue sports suit with dinosaurs pattern</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/04.jpg)">
+            <img src="/i/catalog/molo/04.jpg" />
+        </div>
+        <div class="item-nano__price">£6</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Looney Tunes Long blouse, like new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/05.jpg)">
+            <img src="/i/catalog/molo/05.jpg" />
+        </div>
+        <div class="item-nano__price">£12</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Parka-jacket with faux fur</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/06.jpg)">
+            <img src="/i/catalog/molo/06.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Small mustard knitted sweater</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/07.jpg)">
+            <img src="/i/catalog/molo/07.jpg" />
+        </div>
+        <div class="item-nano__price">£11</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Hawaiian t-shirt for young lady</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/08.jpg)">
+            <img src="/i/catalog/molo/08.jpg" />
+        </div>
+        <div class="item-nano__price">£9</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Baseball shirt number 87, great condition</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/09.jpg)">
+            <img src="/i/catalog/molo/09.jpg" />
+        </div>
+        <div class="item-nano__price">£18</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Christmas Ugly Sweater, like new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/10.jpg)">
+            <img src="/i/catalog/molo/10.jpg" />
+        </div>
+        <div class="item-nano__price">£12</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Christmas Ugly Sweater with deer</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/11.jpg)">
+            <img src="/i/catalog/molo/11.jpg" />
+        </div>
+        <div class="item-nano__price">£12</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Two Mini Mouse hoody</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/12.jpg)">
+            <img src="/i/catalog/molo/12.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">T-Shirt Playstation</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/01.jpg)">
+            <img src="/i/catalog/molo/01.jpg" />
+        </div>
+        <div class="item-nano__price">£8</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Two sweaters, brand new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/02.jpg)">
+            <img src="/i/catalog/molo/02.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Minecraft slippers</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/03.jpg)">
+            <img src="/i/catalog/molo/03.jpg" />
+        </div>
+        <div class="item-nano__price">£9</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Blue sports suit with dinosaurs pattern</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/04.jpg)">
+            <img src="/i/catalog/molo/04.jpg" />
+        </div>
+        <div class="item-nano__price">£6</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Looney Tunes Long blouse, like new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/05.jpg)">
+            <img src="/i/catalog/molo/05.jpg" />
+        </div>
+        <div class="item-nano__price">£12</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Parka-jacket with faux fur</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/06.jpg)">
+            <img src="/i/catalog/molo/06.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Small mustard knitted sweater</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/07.jpg)">
+            <img src="/i/catalog/molo/07.jpg" />
+        </div>
+        <div class="item-nano__price">£11</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Hawaiian t-shirt for young lady</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/08.jpg)">
+            <img src="/i/catalog/molo/08.jpg" />
+        </div>
+        <div class="item-nano__price">£9</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Baseball shirt number 87, great condition</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/09.jpg)">
+            <img src="/i/catalog/molo/09.jpg" />
+        </div>
+        <div class="item-nano__price">£18</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Christmas Ugly Sweater, like new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/10.jpg)">
+            <img src="/i/catalog/molo/10.jpg" />
+        </div>
+        <div class="item-nano__price">£12</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Christmas Ugly Sweater with deer</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/11.jpg)">
+            <img src="/i/catalog/molo/11.jpg" />
+        </div>
+        <div class="item-nano__price">£12</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Two Mini Mouse hoody</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/12.jpg)">
+            <img src="/i/catalog/molo/12.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">T-Shirt Playstation</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/01.jpg)">
+            <img src="/i/catalog/molo/01.jpg" />
+        </div>
+        <div class="item-nano__price">£8</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Two sweaters, brand new</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/02.jpg)">
+            <img src="/i/catalog/molo/02.jpg" />
+        </div>
+        <div class="item-nano__price">£10</div>
+    </div>
+</div>
+            </div>
+        
+            <div class="items-list__item">
+                <div class="item-nano item-preview_default">
+    <a class="item-nano__overflow-link" data-modal-trigger="item-modal">Minecraft slippers</a>
+    <div class="item-nano__inner">
+        <div class="item-nano__image" style="background-image: url(/i/catalog/molo/03.jpg)">
+            <img src="/i/catalog/molo/03.jpg" />
+        </div>
+        <div class="item-nano__price">£9</div>
+    </div>
+</div>
+            </div>
+        
+    </div>
+
+    
+</div>
+                            </div>
+
+                        </div>
+                        <div class="item-modal__advert item-modal__advert_foot advert" data-title="Advert"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+</div>
+
+<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+
+	</body>
+
+</html>
